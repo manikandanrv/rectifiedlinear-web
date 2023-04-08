@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import '@/styles/Home.module.css'
+import '../styles/Home.module.css'
 
 import {PostCard, Categories, PostWidget} from '../components'
 import {getPosts} from '../services'
