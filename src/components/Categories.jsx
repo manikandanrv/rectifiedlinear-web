@@ -18,7 +18,7 @@ const Categories = () => {
         Upcoming Events
       </h3>  
       {categories.map((category) => (
-        <div className='flex-grow ml-4 mb-8'>
+        <div key={category.name} className='flex-grow ml-4 mb-8' >
             <p className='text-gray-800 font-xs font-semibold'>
               {category.title}
             </p>
