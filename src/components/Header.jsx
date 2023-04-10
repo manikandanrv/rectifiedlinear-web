@@ -1,7 +1,7 @@
 import React, {useContext} from 'react';
 import Link from 'next/link';
 
-const categories = [{name: 'Events' , slug: 'pastevents'}, {name: 'About Kendra' , slug: 'aboutramanakendra'}];
+const categories = [{name: 'Sri Ramanasramam' , slug: 'https://www.sriramanamaharshi.org/'}, {name: 'About Kendra' , slug: '/post/welcome'}];
 
 const Header = () => {
   return (
@@ -17,7 +17,7 @@ const Header = () => {
             </div>
             <div className='hidden md:float-left md:contents'>
                 {categories.map((category) => (
-                    <Link key={category.slug} href={`category/${category.slug}`}>
+                    <Link key={category.slug} href={category.slug}>
                         <span className='md:float-right mt-2 align-middle text-white ml-4 font-semibold cursor-pointer'>
                             {category.name}
                         </span>
