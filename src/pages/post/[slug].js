@@ -8,7 +8,7 @@ const PostDetails = ({post}) => {
   const router = useRouter();
 
   if(router.isFallback) {
-    <Loader />
+    return <Loader />
   }
   return (
     <div className='container mx-auto px-10 mb-8'>
